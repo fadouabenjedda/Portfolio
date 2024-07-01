@@ -1,18 +1,97 @@
 body{
     margin: 0% 15% 0% 15%;
 }
+.principal{
+    background-color: black;
+    padding: 5%;
+    color: white;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
+}
+.logo{
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
-    font-size: 18px;
-    color: black;
-
+    font-size: 13px;
+    color: rgb(236, 185, 89);
+    font-weight: bold;
 }
 nav{
     gap: 15px;
+}
+.herosection{
+    height: 250px;
+    background-color: rgb(15, 13, 13);
+    border-radius: 10%;
+}
+h1{
+    padding: 10%;
+    text-align: center;
+    font-size: 35px;
+    color: orange;
+}
+.aboutme{
+    display: flex;
+}
+.btn1{
+    color: orange;
+    background-color: rgb(15, 13, 13);
+    border-color: rgb(15, 13, 13);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10%;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}
+.lesboxes{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.box{
+    background-color: rgb(15, 13, 13);
+    width: 250px;
+    height: 130px;
+    text-align: center;
+    border-radius: 10%;
+    color: white !important;
+    
+}
+.aprojets{
+    font-size: 15px;
+   color: rgb(170, 169, 169);
+}
+footer{
+    margin-top: 40px;
+    height: 250px;
+    display: flex;
+    background-color: rgb(15, 13, 13) ;
+    border-radius: 10%;
+    justify-content: space-between;
+}
+.divfooter{
+    color: white;
+    padding: 5%;
+    gap: 15px;
+}
+.p7{
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+}
+h3{
+    color: orange;
 }
