@@ -7,10 +7,17 @@ body{
     color: white;
 }
 header{
-    display: flex;
-    justify-content: space-between;
+    padding: 5%;
+    background-color: rgb(15, 13, 13);
+}
+.navbar{
+    display:flex;
     align-items: center;
-    margin-top: 15px;
+}
+.navliste{
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 .logo{
     color: orange;
@@ -19,12 +26,14 @@ header{
 }
 a{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(236, 185, 89);
     font-weight: bold;
 }
 nav{
-    gap: 15px;
+    
+    gap: 30px;
+    justify-content: space-between;
 }
 .herosection{
     height: 250px;
@@ -39,6 +48,10 @@ h1{
 }
 .aboutme{
     display: flex;
+}
+.texte2{
+    animation-name: SlideInFromLeft;
+    animation-duration: 3s;
 }
 .btn1{
     color: orange;
@@ -62,17 +75,45 @@ h2{
     
 }
 .box{
-    background-color: rgb(15, 13, 13);
+    align-items: center;
+    background-color:rgb(15, 13, 13);
     width: 250px;
-    height: 130px;
     text-align: center;
+    width: 200px;
+    padding: 3%; 
     border-radius: 10%;
-    color: white !important;
-    
+    color: white; 
 }
-.aprojets{
+.box img{
+    background-color: white;
+    width: 200px;
+    height: 150px;
+}
+.Compétences{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.formulaire{
+    text-align: center;
+}
+form{
+    background-color: rgb(15, 13, 13);
+    padding: 5%;
+    border-radius: 10%;
+}
+input{
+    background-color: rgb(245, 208, 141);
+}
+textarea{
+    background-color: rgb(245, 208, 141);
+}
+.btn2{
+    color: orange;
+    background-color: rgb(15, 13, 13);
+    border-color: rgb(15, 13, 13);
     font-size: 15px;
-   color: rgb(170, 169, 169);
+    padding: 10px;
+    border-radius: 10%;
 }
 footer{
     margin-top: 40px;
@@ -87,11 +128,43 @@ footer{
     padding: 5%;
     gap: 15px;
 }
-.p7{
+.p5{
     font-size: 35px;
     font-weight: bold;
     color: orange;
 }
 h3{
     color: orange;
+}
+@media (max-width : 768px){
+    .navliste{
+        flex-direction: column;
+    }
+    .aboutme{
+        flex-direction: column;
+    }
+    textarea{
+       width: 200px;
+    }
+    footer{
+        flex-direction: column;
+        height: 500px;
+        text-align: center;
+    }
+/* }
+@keyframes slideInFromLeft{
+    from{
+        margin-left: -100px;
+    }
+    to{
+        margin-left:0px ;
+    }
+} */
+@keyframes SlideInFromLeft{
+    from{
+        margin-left:-300px;
+    }
+    to{
+        margin-left: 0px;
+    }
 }
