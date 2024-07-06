@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -19,6 +21,9 @@
                     <li><a href="#">Projets</a></li>
                     <li><a href="#">Compétences</a></li>
                     <li><a href="#">Conatact</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </ul>
             </nav>
         </header>
@@ -38,7 +43,7 @@
                     et plus particulièrement dans la maîtrise de WordPress.</p>
                 <p class="p3">Nom : BENJEDDA<br>Prénom : FADOUA<br>Email : fadouabenjedda01@gmail.com<br>Téléphone :
                     06123456</p>
-                <button class="btn1">Télécharger le CV</button>
+                <button class="btn"><a href="#">Télécharger le CV</a></button>
             </div>
         </section>
         <section class="projets">
@@ -60,12 +65,12 @@
                     <a href="#">Création de la page d'accueil du site web "Morocco TechSummit 2025"</a>
                 </div>
                 <div class="box">
-                    <a href="#"><img src="image portfolio/8678778-LOGO-TMS.png" alt="photo de box"></a>
-                    <a href="#">Création du site web TMS energies</a>
+                    <a href="https://tmsenergies.fr/"><img src="image portfolio/8678778-LOGO-TMS.png" alt="photo de box"></a>
+                    <a href="https://tmsenergies.fr/">Création du site web TMS energies</a>
                 </div>
                 <div class="box">
-                    <a href="#"><img src="image portfolio/Capture d’écran 2024-05-06 114344.png" alt="photo de box"></a>
-                    <a href="#">Création de site web volume coffe</a>
+                    <a href="https://volumecoffe.com/"><img src="image portfolio/Capture d’écran 2024-05-06 114344.png" alt="photo de box"></a>
+                    <a href="https://volumecoffe.com/">Création de site web volume coffe</a>
                 </div>
                 <div class="box">
                     <a href="#"><img src="image portfolio/c8077b2c-2ecc-4208-a2e5-9f758253df06.avif"
@@ -76,25 +81,36 @@
         </section>
         <section class="Compétences">
             <h2>Compétences</h2>
-            <ul>
-                <li>Installation et configuration de WordPress</li>
-                <li>Création de contenu</li>
-                <li>Personnalisation de thème </li>
-            </ul>
+            
+                <p class="p9">Installation et configuration de WordPress</p>
+                <div class="container">
+                    <div class="bar wordpress">100%</div>
+                </div>
+                <p class="p9">Création de contenu</p>
+                <div class="container">
+                    <div class="bar creationcontenu">80%</div>
+                </div>
+                <p class="p9">Personnalisation de thème </p>
+                <div class="container">
+                    <div class="bar theme">90%</div>
+                </div>
+                <p class="p9">Maitriser html css</p>
+                <div class="container">
+                    <div class="bar htmlcss">70%</div>
+                </div>
+            
         </section>
         <h2>Formulaire de contact</h2>
         <section class="formulaire">
             <form>
                 <label>Name:</label>
-                <input type="texte">
+                <input type="texte"><br><br>
                 <label>Email:</label>
                 <input type="texte"><br><br>
                 <label>Message :</label><br><br>
                 <textarea cols="50" rows="7"></textarea><br><br>
-                <button class="btn2">Envoyer</button>
+                <button class="btn"><a href="#">Envoyer</a></button>
             </form>
-
-
         </section>
 
         <footer>
@@ -115,6 +131,7 @@
             </div>
         </footer>
     </section>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

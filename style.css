@@ -3,7 +3,7 @@ body{
 }
 .principal{
     background-color: black;
-    padding: 5%;
+    /* padding: 5%; */
     color: white;
 }
 header{
@@ -38,7 +38,7 @@ nav{
 .herosection{
     height: 250px;
     background-color: rgb(15, 13, 13);
-    border-radius: 10%;
+    /* border-radius: 10%; */
 }
 h1{
     padding: 10%;
@@ -50,21 +50,23 @@ h1{
     display: flex;
 }
 .texte2{
+    margin-right: 10px;
     animation-name: SlideInFromLeft;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
-.btn1{
+.btn{
     color: orange;
     background-color: rgb(15, 13, 13);
     border-color: rgb(15, 13, 13);
     font-size: 15px;
     padding: 10px;
-    border-radius: 10%;
+   
 }
 h2{
     text-align: center;
     font-size: 30px;
     color: orange;
+    animation: fadeIn 0.5s;
 }
 .lesboxes{
     display: flex;
@@ -72,6 +74,7 @@ h2{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    animation: SlideInFromTop 2s;
     
 }
 .box{
@@ -81,46 +84,61 @@ h2{
     text-align: center;
     width: 200px;
     padding: 3%; 
-    border-radius: 10%;
-    color: white; 
+    color: white;
+    margin: 15px; 
 }
 .box img{
     background-color: white;
-    width: 200px;
-    height: 150px;
+    width: 140px;
+    height: 100px;
 }
 .Compétences{
     padding-top: 5%;
     padding-bottom: 3%;
 }
+.container{
+    background-color: rgb(73, 69, 69);
+    margin: 10px;
+
+}
+.p9{
+    margin-left: 30px;
+}
+.bar{
+    width: 100%;
+    text-align: right;
+    color: white;
+    padding: 10px;
+}
+.wordpress{background-color:orange;width: 97.9%;}
+.creationcontenu{background-color:orange ;width: 80%;}
+.theme{background-color:orange ;width: 90%;}
+.htmlcss{background-color:orange ;width: 70%;}
+
 .formulaire{
-    text-align: center;
+    width: 500px;
+    margin: 0 auto;
 }
 form{
+    
     background-color: rgb(15, 13, 13);
     padding: 5%;
-    border-radius: 10%;
 }
 input{
-    background-color: rgb(245, 208, 141);
+    background-color: white;
 }
 textarea{
-    background-color: rgb(245, 208, 141);
+    background-color: white;
 }
-.btn2{
-    color: orange;
-    background-color: rgb(15, 13, 13);
-    border-color: rgb(15, 13, 13);
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 10%;
+.btn:hover {
+    background-color: orange;
+    color: black !important;
 }
 footer{
     margin-top: 40px;
     height: 250px;
     display: flex;
     background-color: rgb(15, 13, 13) ;
-    border-radius: 10%;
     justify-content: space-between;
 }
 .divfooter{
@@ -149,22 +167,38 @@ h3{
     footer{
         flex-direction: column;
         height: 500px;
-        text-align: center;
+        text-align: center; 
     }
-/* }
-@keyframes slideInFromLeft{
-    from{
-        margin-left: -100px;
+    .box{
+        align-items: center;
     }
-    to{
-        margin-left:0px ;
+    .formulaire{
+        width: 300px;
     }
-} */
+    .texte2{
+        margin-left: 10px;
+    }
+    .wordpress{
+        width: 96.5%;
+        }
+}
+@media (max-width : 468px){
+    
+}
+
 @keyframes SlideInFromLeft{
     from{
-        margin-left:-300px;
+        margin-left:300px;
     }
     to{
         margin-left: 0px;
+    }
+}
+@keyframes SlideInFromTop{
+    from{
+        margin-top: 200px;
+    }
+    to{
+        margin-top: 0px;
     }
 }
